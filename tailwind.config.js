@@ -1,0 +1,106 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
+import forms from '@tailwindcss/forms';
+
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './storage/framework/views/*.php',
+        './resources/views/**/*.blade.php',
+        './resources/js/**/*.jsx',
+    ],
+
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ['Inter', ...defaultTheme.fontFamily.sans],
+                mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
+            },
+            colors: {
+                "inverse-surface": "#2d3133",
+                "surface-variant": "#e0e3e5",
+                "outline": "#76777d",
+                "on-primary-fixed-variant": "#3f465c",
+                "error": "#ba1a1a",
+                "surface": "#f7f9fb",
+                "on-tertiary-container": "#008ebf",
+                "on-tertiary": "#ffffff",
+                "on-error": "#ffffff",
+                "on-surface-variant": "#45464d",
+                "inverse-on-surface": "#eff1f3",
+                "tertiary-fixed-dim": "#7bd0ff",
+                "surface-container": "#eceef0",
+                "surface-container-lowest": "#ffffff",
+                "secondary-fixed": "#d5e3fd",
+                "on-secondary-fixed-variant": "#3a485c",
+                "on-surface": "#191c1e",
+                "primary-fixed": "#dae2fd",
+                "on-secondary": "#ffffff",
+                "surface-container-low": "#f2f4f6",
+                "secondary-container": "#d5e3fd",
+                "on-primary": "#ffffff",
+                "primary": "#000000",
+                "on-secondary-container": "#57657b",
+                "background": "#f7f9fb",
+                "on-tertiary-fixed": "#001e2c",
+                "surface-dim": "#d8dadc",
+                "on-secondary-fixed": "#0d1c2f",
+                "primary-container": "#131b2e",
+                "primary-fixed-dim": "#bec6e0",
+                "tertiary-container": "#001e2c",
+                "tertiary": "#000000",
+                "on-primary-fixed": "#131b2e",
+                "on-primary-container": "#7c839b",
+                "on-error-container": "#93000a",
+                "error-container": "#ffdad6",
+                "inverse-primary": "#bec6e0",
+                "secondary": "#515f74",
+                "surface-container-highest": "#e0e3e5",
+                "on-tertiary-fixed-variant": "#004c69",
+                "outline-variant": "#c6c6cd",
+                "on-background": "#191c1e",
+                "surface-container-high": "#e6e8ea",
+                "surface-bright": "#f7f9fb",
+                "tertiary-fixed": "#c4e7ff",
+                "operational-blue": "#004c69",
+                "success-emerald": "#1b6c31",
+                "safety-orange": "#a13f00",
+                "destructive-red": "#ba1a1a",
+                "border": "var(--border)",
+                "input": "var(--input)",
+                "ring": "var(--ring)",
+                "foreground": "var(--foreground)",
+                "card": "var(--card)",
+                "card-foreground": "var(--card-foreground)",
+                "popover": "var(--popover)",
+                "popover-foreground": "var(--popover-foreground)",
+                "primary-foreground": "var(--primary-foreground)",
+                "secondary-foreground": "var(--secondary-foreground)",
+                "muted": "var(--muted)",
+                "muted-foreground": "var(--muted-foreground)",
+                "accent": "var(--accent)",
+                "accent-foreground": "var(--accent-foreground)",
+                "destructive": "var(--destructive)"
+            },
+            borderRadius: {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            spacing: {
+                "margin-mobile": "16px",
+                "margin-desktop": "32px",
+                "gutter": "16px",
+                "base": "4px",
+                "control-bar-height": "56px",
+                "sidebar-width": "280px",
+                "grid-gutter": "1.5rem",
+                "table-cell-padding": "0.75rem"
+            }
+        },
+    },
+
+    plugins: [forms],
+};
+
