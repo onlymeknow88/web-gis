@@ -11,7 +11,7 @@ export default function CreateUserModal({ isOpen, setIsOpen, createForm, handleC
                     <button onClick={() => setIsOpen(false)} className="text-on-surface-variant hover:text-on-surface font-semibold text-lg">&times;</button>
                 </div>
                 <form onSubmit={handleCreateSubmit} className="p-6 space-y-4">
-                    
+
                     <div>
                         <label className="block text-[10px] font-bold text-on-surface-variant uppercase tracking-wider mb-1">Nama Lengkap</label>
                         <input
@@ -31,7 +31,7 @@ export default function CreateUserModal({ isOpen, setIsOpen, createForm, handleC
                             value={createForm.data.email}
                             onChange={(e) => createForm.setData('email', e.target.value)}
                             className="w-full bg-surface-container-low border border-outline-variant rounded-lg px-3 py-2 text-xs text-on-surface focus:outline-none focus:ring-1 focus:ring-primary"
-                            placeholder="Contoh: budi@kideco.co.id"
+                            placeholder="Contoh: email@alamtri.com"
                         />
                         {createForm.errors.email && <p className="text-[10px] text-destructive-red mt-1 font-semibold">{createForm.errors.email}</p>}
                     </div>
